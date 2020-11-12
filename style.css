@@ -47,6 +47,9 @@
 input{
   width: 100%;
 }
+ul{
+  list-style: none;
+}
 img{
   height: 47px;
   width: 47px;
@@ -55,6 +58,31 @@ img{
 .right{
   width: 70%;
   height: 100%;
-  background-color: red;
+  background-color: grey;
   float: right;
+  /*display: flex;*/
+}
+.message-box{
+  clear: both;
+
+  border-radius: 5px;
+}
+.message{
+  max-width: 400px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+.received{
+  background-color: white;
+  float: left;
+}
+.sent{
+  background-color: green;
+  float: right;
+}
+.mex{
+  width: 100%;
+  margin-bottom: 1px;
+  height: 30px;
+  border-radius: 15px;
 }

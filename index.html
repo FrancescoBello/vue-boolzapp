@@ -26,9 +26,9 @@
             </div>
             <input type="text" placeholder="cerca">
 
-              <ul>
+              <ul v-for = "contact in contacts" >
                 <div class="box">
-                <li v-for = "contact in contacts" >{{ contact }}</li>
+                <li >{{ contact }}</li>
                 </div>
               </ul>
 
@@ -39,6 +39,13 @@
             <div class="box">
 
             </div>
+            <div class="message-box">
+              <div class="message sent">ciao</div>
+                <div class="message received">salvesss Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                <div class="message sent"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  ciao</div>
+                <div class="message received">salvesss Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</div>
+            </div>
+            <input class="mex" type="text" placeholder="scrivi il messaggio">
 
           </div>
 
