@@ -29,7 +29,7 @@
 
               <ul v-for = "contact in contacts" >
                 <div   class="chat-box">
-                <li > <img  @click="openChat" :src="'img/user' + contact.avatar + '.jpg'" :alt="contact.name">  {{contact.name }}</li>
+                <li > <img   :src="'img/user' + contact.avatar + '.jpg'" :alt="contact.name">  {{contact.name }}</li>
                 </div>
               </ul>
 
@@ -41,7 +41,8 @@
 
             </div>
             <div   class="message-box">
-              <div v-for="message in contacts" class="mex received sent">{{contact.messages}}</div>
+              <div v-for="messages in contacts " class="mex  sent">{{contacts.message}}</div>
+
 
 
             </div>

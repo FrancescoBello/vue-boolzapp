@@ -94,12 +94,11 @@ var App = new Vue({
     ]
 
 },
-methods : {
-  openChat() {
-         this.indiceChat += 1;
+//  openChat() {
+  //       this.indiceChat += 1;
 
-     },
+    // },
 
-}
+//}
 }
 )
