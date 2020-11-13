@@ -11,10 +11,10 @@ body{
 }
 
 
-.up{
+/*.up{
   height: 100px;
   weight: 100%;
-}
+}*/
 .down{
   height: 100vh;
   weight: 100%;
@@ -23,8 +23,9 @@ body{
   align-items: center;
   margin-left: 50px;
   margin-right: 50px;
+  margin-top: 50px;
   height: 600px;
-  width: calc(100% - 100px);
+  width: 1000px;
   clear: both;
 
 }
@@ -39,6 +40,12 @@ body{
   border: 1px solid grey;
   height:50px;
   width: 100%
+}
+.chat-box{
+  background-color: white;
+  border: 1px solid grey;
+  height:70px;
+  width: 100%;
 }
 input{
   width: 100%;
@@ -59,12 +66,13 @@ img{
   /*display: flex;*/
 }
 .message-box{
-  clear: both;
-  height: calc(100% - 50px - 50px);
+  height: 500px;
+  /*height: calc(100% - 50px - 50px);*/
   border-radius: 5px;
   overflow-y: auto;
+  background-image: url(file:///Users/francescobello/Desktop/Bello%20Francesco/vue-boolzapp/img/sfondo.jpg);
 }
-.message{
+.mex{
   max-width: 400px;
   margin-bottom: 15px;
   padding: 10px;
@@ -72,10 +80,13 @@ img{
 .received{
   background-color: white;
   float: left;
+  clear: both;
 }
 .sent{
   background-color: green;
   float: right;
+  clear: both;
+
 }
 .mex{
   width: 100%;
@@ -85,6 +96,7 @@ img{
 }
 footer {
   height:50px;
+  background-color: white;
 }
 footer input{
   height: 40px;
