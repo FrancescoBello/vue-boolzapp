@@ -2,6 +2,8 @@ var App = new Vue({
   el : "#root",
   data : {
     indiceChat:0,
+    indiceMex:0,
+    //indice:0,
 
     avatarImg :"file:///Users/francescobello/Desktop/Bello%20Francesco/vue-boolzapp/img/myuser.jpg",
     contacts: [
@@ -94,11 +96,13 @@ var App = new Vue({
     ]
 
 },
-//  openChat() {
-  //       this.indiceChat += 1;
+  methods:{
+    openChat(indice) {
+           this.indiceChat = indice;
 
-    // },
+       },
+  }
 
-//}
 }
+
 )
