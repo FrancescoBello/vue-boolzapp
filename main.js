@@ -109,7 +109,7 @@ var App = new Vue({
                 status: 'sent'
             };
 
-        this.message.push(nuovoMex);
+        this.contacts[0].messages.push(nuovoMex);
         this.newMessage = "";
       },
 
