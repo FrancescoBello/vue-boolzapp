@@ -1,7 +1,6 @@
 var App = new Vue({
   el : "#root",
   data : {
-    active_contact: 0,
     indiceMex:0,
     newMessage:"",
     indice:0,
@@ -99,19 +98,35 @@ var App = new Vue({
 },
   methods:{
     change_active_contact(contact_indice) {
-           this.active_contact = contact_indice;
+           this.indiceMex = contact_indice;
 
        },
        addMex(){
+
+         console.log('addmex chiamato');
+
          let nuovoMex = {
-                text: this.newMessage,
+                message: this.newMessage,
                 date: '16/11/2020',
                 status: 'sent'
             };
 
-        this.contacts[0].messages.push(nuovoMex);
+        this.contacts[this.indiceMex].messages.push(nuovoMex);
         this.newMessage = "";
+        if (this.newMessage != " ") {
+           setTimeout(function () {
+             console.log("time");
+             let receivedMessage = {
+               message : "ok",
+               date: 16/11/2020,
+               status: 'received'
+             } 
+           },1000);
+
+
+        }
       },
+
 
 
   }
