@@ -27,11 +27,11 @@
             </div>
             <input type="text" placeholder="cerca">
 
-              <ul v-for = "(contact,indice)  in contacts" >
-                <div   class="chat-box">
-                <li > <img @click="openChat"  :src="'img/user' + contact.avatar + '.jpg'" :alt="contact.name">  {{contact.name }}</li>
+              <div class="contact"  v-for = "(contact, indice)  in contacts" @click="change_active_contact(indice)">
+                <div  @click="change_active_contact(indice)"  class="chat-box">
+                <div   class="contact-info" > <img    :src="'img/user' + contact.avatar + '.jpg'" :alt="contact.name">  {{contact.name }}</div>
                 </div>
-              </ul>
+              </div>
 
 
 
@@ -41,9 +41,9 @@
 
             </div>
             <div   class="message-box">
-              <div v-for="item in contacts[indiceMex].messages" class="mex received">{{item.message}} </div>
+              <div v-for="item in contacts[indiceMex].messages" class="mex" :class="item.status + ' message '">{{ item.message }}</div>
             </div>
-            <footer> <input type="text" placeholder="scrivi un messaggio"> </footer>
+            <footer> <input type="text" placeholder="scrivi un messaggio" v-model="newMessage" @keyup.enter="addMex"> </footer>
 
           </div>
 

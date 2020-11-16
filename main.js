@@ -1,9 +1,10 @@
 var App = new Vue({
   el : "#root",
   data : {
-    indiceChat:0,
+    active_contact: 0,
     indiceMex:0,
-    //indice:0,
+    newMessage:"",
+    indice:0,
 
     avatarImg :"file:///Users/francescobello/Desktop/Bello%20Francesco/vue-boolzapp/img/myuser.jpg",
     contacts: [
@@ -45,7 +46,7 @@ var App = new Vue({
            },
            {
            date: '10/01/2020 16:15:22',
-           message: 'Tutto fatto!',
+           message: 'Tu fatto!',
            status: 'received'
          }],
       },
@@ -61,7 +62,7 @@ var App = new Vue({
            },
            {
            date: '10/01/2020 15:50:00',
-           message: 'Ricordati di dargli da mangiare',
+           message: 'Ricordatigiare',
            status: 'sent'
            },
            {
@@ -77,7 +78,7 @@ var App = new Vue({
         messages:[
           {
            date: '10/01/2020 15:30:55',
-           message: 'Hai portato a spasso il cane?',
+           message: 'Hai portato il cane?',
            status: 'sent'
            },
            {
@@ -97,12 +98,25 @@ var App = new Vue({
 
 },
   methods:{
-    openChat(indice) {
-           this.indiceChat = indice;
+    change_active_contact(contact_indice) {
+           this.active_contact = contact_indice;
 
        },
+       addMex(){
+         let nuovoMex = {
+                text: this.newMessage,
+                date: '16/11/2020',
+                status: 'sent'
+            };
+
+        this.message.push(nuovoMex);
+        this.newMessage = "";
+      },
+
+
   }
+
 
 }
 
-)
+);

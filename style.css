@@ -72,11 +72,11 @@ img{
   overflow-y: auto;
   background-image: url(file:///Users/francescobello/Desktop/Bello%20Francesco/vue-boolzapp/img/sfondo.jpg);
 }
-.mex{
+/*.mex{
   max-width: 400px;
   margin-bottom: 15px;
   padding: 10px;
-}
+}*/
 .received{
   background-color: white;
   float: left;
@@ -89,7 +89,8 @@ img{
 
 }
 .mex{
-  width: 100%;
+  max-width: 400px;
+  padding: 10px;
   margin-bottom: 1px;
   height: 30px;
   border-radius: 10px;
@@ -100,5 +101,5 @@ footer {
 }
 footer input{
   height: 40px;
-  
+
 }
