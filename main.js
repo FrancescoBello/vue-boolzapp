@@ -5,6 +5,7 @@ var App = new Vue({
     newMessage:"",
     indice:0,
     search:"",
+    visible:true,
 
     avatarImg :"file:///Users/francescobello/Desktop/Bello%20Francesco/vue-boolzapp/img/myuser.jpg",
     contacts: [
@@ -198,11 +199,13 @@ var App = new Vue({
         }else {
           contact.visible = false;
         }
+          console.log(this.search);
       });
-      console.log(this.search);
 
 
-      }
+    },
+
+
 
 
 
