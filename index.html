@@ -28,7 +28,7 @@
             </div>
             <input class="cerca" type="text" placeholder="cerca" v-model="search" @keyup="searchItem" >
 
-              <div  v-if="contact.visible=false"  class="contact"  v-for = "(contact, indice)  in contacts" @click="change_active_contact(indice)">
+              <div  v-if = "contact.visible == true"  class="contact"  v-for = "(contact, indice)  in contacts" @click="change_active_contact(indice)">
                 <div  @click="change_active_contact(indice)"  class="chat-box">
                 <div   class="contact-info" > <img    :src="'img/user' + contact.avatar + '.jpg'" :alt="contact.name">  {{contact.name }}</div>
                 </div>
