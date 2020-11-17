@@ -32,23 +32,35 @@ body{
 .left{
   width: 30%;
   height: 100%;
-  background-color: green;
+  background-color: white;
   float: left;
 }
+.fas {
+  float: right;
+  font-size: 20px;
+  margin-left: 15px;
+  padding: 10px;
+  color: grey;
+}
 .box{
-  background-color: white;
-  border: 1px solid grey;
+  background-color: #eae6e6;
+  border: 1px solid #eae6e6;
   height:50px;
   width: 100%
 }
+.myAvatar img{
+  background-color: #eae6e6;
+}
 .chat-box{
   background-color: white;
-  border: 1px solid grey;
+  border: 1px solid white;
   height:70px;
   width: 100%;
 }
-input{
+.cerca{
   width: 100%;
+  height: 40px;
+  font-size: 20px;
 }
 ul{
   list-style: none;
@@ -57,6 +69,7 @@ img{
   height: 47px;
   width: 47px;
   border-radius: 15px;
+  background-color: white;
 }
 .right{
   width: 70%;
@@ -87,11 +100,15 @@ img{
   float: right;
   clear: both;
 
+
 }
 .mex{
   max-width: 400px;
   padding: 10px;
   margin-bottom: 1px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   height: 30px;
   border-radius: 10px;
 }
@@ -99,7 +116,36 @@ footer {
   height:50px;
   background-color: white;
 }
-footer input{
-  height: 40px;
+
+ footer input{
+  height: 45px;;
+  width: 600px;;
+  border: 1px solid white;
+  font-size: 20px;
 
 }
+.fas.fa-microphone{
+  font-size: 28px;
+  margin-top: 5px;
+}
+.far.fa-smile{
+  font-size: 30px;
+  color: grey;
+  margin-top: 5px;
+}
+.write{
+  display: inline-block;
+  width: 100%;
+}
+/*.font{
+  height: 40px;
+  color: grey;
+  width: 20px;
+  float: left;
+}
+.fonts{
+  height: 40px;
+  color: grey;
+  width: 20px;
+  float: right;
+}*/
